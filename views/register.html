@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeSpace - Cadastro de Estudante</title>
+    <link rel="icon" href="/images/logo-space.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/styles/admin-login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <img src="/images/logo-space-removebg.png" alt="SafeSpace Logo" class="logo">
+                <h1>SafeSpace</h1>
+                <p>Cadastro de Estudante</p>
+            </div>
+            
+            <!-- Botão Microsoft (Principal) -->
+            <button id="microsoftRegister" class="microsoft-button">
+                <i class="fab fa-microsoft"></i>
+                <span>Cadastrar com Microsoft</span>
+            </button>
+            
+            <!-- Divisor -->
+            <div class="divider">
+                <span>ou</span>
+            </div>
+            
+            <!-- Formulário de cadastro tradicional (Oculto por padrão) -->
+            <form id="registerForm" class="login-form" style="display: none;">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="nome" placeholder="Nome Completo" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" id="rm" placeholder="Matrícula" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                <div class="error-message" id="errorMessage"></div>
+                <button type="submit" class="login-button">
+                    <span>Cadastrar</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            
+            <div class="login-footer">
+                <div class="login-links">
+                    <a href="#" id="toggleRegisterForm" class="forgot-password">Usar cadastro tradicional</a>
+                    <a href="/views/Login.html" class="register-link">Já possui uma conta? Faça login</a>
+                </div>
+                <a href="/" class="back-home">
+                    <i class="fas fa-home"></i>
+                    Voltar para o site
+                </a>
+            </div>
+            
+            <!-- Informações de Segurança -->
+            <div class="security-info">
+                <div class="security-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Seguro</span>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-user-secret"></i>
+                    <span>Anônimo</span>
+                </div>
+                <div class="security-item">
+                    <i class="fas fa-lock"></i>
+                    <span>Criptografado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/cadastro.js"></script>
+</body>
+
+</html>

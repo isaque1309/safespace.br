@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="/images/logo-space.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/script.js" defer></script>
+    <script src="/scripts/logout.js" defer></script>
+    <title>SafeSpace</title>               
+</head>
+<body>
+    <header>
+        <nav>
+          <a class="logo" href="index.html"><img id="logoside" src="/images/logo-space-removebg.png" alt=""> Safe<span class="color-space">Space</span>
+        </a>
+          <div class="mobile-menu"> 
+            <div class="line1"></div>  
+            <div class="line2"></div>
+            
+            <div class="line3"></div>
+          </div> <!--mobile-menu--> 
+
+          <ul class="nav-list"> 
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#testemunhas">Feedback</a></li>
+            <li><a href="#footer">Contato</a></li>
+            <li><a href="/views/admin-login.html" class="admin-link"><i class="fas fa-user-shield"></i></a></li>
+          </ul> <!--nav-list-->
+        </nav>
+      </header> <!--header-->
+    <main>  
+        
+        
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <p id="bem-vindo">Bem-vindo ao SafeSpace</p>
+                        <h1>Faça aqui sua <span>denúncia</span> online</h1>
+                        <p>Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.</p>
+
+                        <div class="btn-contato">
+                            <button onclick="showLoginOptions()">Fazer Denúncia</button>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="/images/img-home.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+<!-- Modal de Seleção de Login -->
+<div id="loginOptionsModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <img src="/images/logo-space-removebg.png" alt="SafeSpace Logo" class="modal-logo">
+        <h1 class="modal-h1">Escolha o tipo de acesso</h1>
+        <p class="modal-p">Selecione o tipo de usuário para continuar</p>
+
+        <button class="modal-button" onclick="window.location.href='/views/Login.html'" style="margin-bottom: 10px;">
+            <i class="fas fa-user"></i> Acesso Estudante
+        </button>
+
+        <button class="modal-button" onclick="window.location.href='/views/admin-login.html'"
+            style="background-color: #1e1c2a;">
+            <i class="fas fa-user-shield"></i> Acesso Administrativo
+        </button>
+    </div>
+</div>
+
+<script>
+    function showLoginOptions() {
+        document.getElementById('loginOptionsModal').style.display = 'flex';
+    }
+
+    function closeLoginModal() {
+        document.getElementById('loginOptionsModal').style.display = 'none';
+    }
+
+    // Fechar o modal se clicar fora dele
+    window.onclick = function (event) {
+        const modal = document.getElementById('loginOptionsModal');
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+        <section class="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">Por que utilizar Safe<span>Space</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <img src="/images/mulher-anonima.png" id="img-icon" class="img-icon" alt="">
+                        <h3>Segurança e Anonimato</h3>
+                        <p>Faça sua denúncia com 100% de anonimato. No SafeSpace, sua identidade é protegida, garantindo que você possa se manifestar sem medo de represálias.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <img src="/images/analise-competitiva.png" id="img-analise" alt="">
+                        <h3>Análise de Dados para Mudança Social</h3>
+                        <p>Suas denúncias ajudam a mapear padrões de abuso e discriminação, possibilitando ações concretas para melhorias na comunidade.</p>
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <img src="/images/comunidade.png" id="img-analise"  alt="">
+                        <h3>Comunidade de Apoio</h3>
+                        <p>Faça parte de uma rede de apoio. No SafeSpace, você não está sozinho. Conecte-se com outros que passaram por situações semelhantes e compartilhe experiências.   </p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+        <section class="Testemunhas">
+
+            <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depoimentos de Empresas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .testemunhos {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .testemunhos h2 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    .linha-verde {
+      width: 80px;
+      height: 4px;
+      background-color: #4CAF50;
+      margin: 10px auto 40px;
+      border-radius: 5px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px 20px;
+      width: 300px;
+      text-align: left; /* Alinha o texto à esquerda */
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Alinha elementos filhos à esquerda */
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .logo_empresa{
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin: 0 auto 10px; /* Centraliza a imagem horizontalmente */
+      display: block; 
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: #222;
+      margin: 10px 0;
+    }
+
+    .estrelas {
+      color: #4CAF50;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <section class="testemunhos">
+    <h2>Empresas parceiras satisfeitas</h2>
+    <div class="linha-verde"></div>
+    
+    <div class="container">
+      <!-- Empresa 1 -->
+      <div class="card">
+        <img src="/images/logohorizonte.png" alt="Logo Colégio Horizonte" class="logo_empresa">
+        <h3>Colégio Horizonte</h3>
+        <div class="estrelas">★★★★★</div>
+        <p>“Desde que implementamos o SafeSpace, notamos uma melhoria significativa na comunicação entre alunos e equipe pedagógica. Ferramenta indispensável.”</p>
+      </div>
+
+      <!-- Empresa 2 -->
+      <div class="card">
+        <img src="/images/logoinsituto.png" alt="Logo Instituto Educar Melhor" class="logo_empresa">
+        <h3>Instituto Educar Melhor</h3>
+        <div class="estrelas">★★★★★</div>
+        <p>“A confidencialidade oferecida pela plataforma permite que os alunos se expressem com mais liberdade. Um avanço na cultura escolar.”</p>
+      </div>
+
+      <!-- Empresa 3 -->
+      <div class="card">
+        <img src="/images/logocuidar.png" alt="Logo Fundação Cuidar" class="logo_empresa">
+        <h3>Fundação Cuidar</h3>
+        <div class="estrelas">★★★★★</div>
+        <p>“O SafeSpace nos ajudou a identificar e resolver situações delicadas antes que se agravassem. Segurança emocional virou prioridade.”</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+
+        <section id="sobre" class="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img id="logo" src="/images/logo-space.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>SOBRE  NÓS</h2>
+                        <p>O Safe Space é uma plataforma desenvolvida para promover um ambiente escolar mais seguro e acolhedor. Nossa missão é oferecer um canal anônimo e eficaz para que alunos possam expressar suas preocupações, feedbacks e denúncias, contribuindo para a melhoria contínua da nossa escola.
+                        </p>
+                        <p>Acreditamos que a comunicação aberta é fundamental para o crescimento e desenvolvimento de todos os alunos. Por isso, estamos comprometidos em ouvir cada voz, garantindo que todos se sintam respeitados e valorizados. Nossa equipe é formada por estudantes e educadores que buscam criar um espaço onde todos possam se sentir seguros para compartilhar suas experiências.
+                        </p>
+                        <p>Junte-se a nós nessa iniciativa e ajude a construir uma escola melhor para todos!
+
+                        </p>
+                       
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+        
+    </main>
+
+    <footer id="footer">
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1 class="footer-safe">Safe<span class="color-space" id="Space">Space</span></h1>
+                <p>A sua voz importa, e juntos podemos  <br>fazer a diferença</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Feedback</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Relatar um problema</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Sugestões de melhorias</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Avaliação</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Guias e tutoriais</h3>
+                </li>
+                <li>
+                    <a href="/views/admin-login.html" class="footer-link">
+                        <i class="fas fa-user-shield"></i>
+                        Área Administrativa
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#" class="footer-link">Como usar a plataforma</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Como fazer uma denúncia</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Dicas de segurança</a>
+                </li>
+            </ul>
+            
+
+            <div id="footer_subscribe">
+                <h3>Inscrever-se</h3>
+
+                <p>
+                    Insira seu e-mail para ser notificado sobre
+                    nossas soluções e notícias
+                </p>
+
+            <div id="input_group">
+                <input type="email" id="email" placeholder="Digite seu email">
+                <button>
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+            </div>
+            
+            
+    </footer>
+    <script>
+  (function (w, d, s, o, f, js, fjs) {
+    w["botsonic_widget"] = o;
+    w[o] =
+      w[o] ||
+      function () {
+        (w[o].q = w[o].q || []).push(arguments);
+      };
+    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+    js.id = o;
+    js.src = f;
+    js.async = 1;
+    fjs.parentNode.insertBefore(js, fjs);
+  })(window, document, "script", "Botsonic", "https://widget.botsonic.com/CDN/botsonic.min.js");
+  Botsonic("init", {
+    serviceBaseUrl: "https://api-bot.writesonic.com",
+    token: "1e506c4f-64fd-4c02-9730-52ddb7a2c5ed",
+  });
+</script>
+    <script src="/script.js"></script>
+</body>
+</html>
+
